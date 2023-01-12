@@ -8,13 +8,13 @@ int hoursWorked;
 hoursWorked= 35;
 
 double payRate;
-payRate = 7.25;
+payRate = 7.25D;
 
 double totalPay;
 totalPay=hoursWorked*payRate;
 
-//Console.WriteLine(totalPay);
-//Console.ReadLine();
+Console.WriteLine(totalPay);
+Console.ReadLine();
 
 /*
 Your next C# task will be to create a class with a couple member variables.
@@ -26,5 +26,5 @@ Student mySelf = new Student();
 mySelf.name = "Matthew Walloch";
 mySelf.overallGradePercentage= 108.36;
 
-Console.WriteLine("Name: " + mySelf.name + "\n" + "Overall Grade: " + mySelf.overallGradePercentage + "%");
-Console.ReadLine();
+//Console.WriteLine("Name: " + mySelf.name + "\n" + "Overall Grade: " + mySelf.overallGradePercentage + "%");
+//Console.ReadLine();
