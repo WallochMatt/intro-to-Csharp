@@ -12,8 +12,20 @@ namespace Intro
 
         public double overallGradePercentage;
 
+        public bool isGraduate;
 
 
 
+        public Student(string name, double overallGradePercentage)
+        {
+            this.name = name;
+            this.overallGradePercentage= overallGradePercentage;
+            this.isGraduate = false;
+        }
+
+        public void MakeStudentAGraduate()
+        {
+            isGraduate = true;
+        }
     }
 }

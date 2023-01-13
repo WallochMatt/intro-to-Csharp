@@ -13,8 +13,8 @@ payRate = 7.25D;
 double totalPay;
 totalPay=hoursWorked*payRate;
 
-Console.WriteLine(totalPay);
-Console.ReadLine();
+//Console.WriteLine(totalPay);
+//Console.ReadLine();
 
 /*
 Your next C# task will be to create a class with a couple member variables.
@@ -22,9 +22,16 @@ Go ahead and create a class called 'Student'.
 This can be done in the project that you used for the previous task, or a brand new project if you want.
 */
 
-Student mySelf = new Student();
-mySelf.name = "Matthew Walloch";
-mySelf.overallGradePercentage= 108.36;
+//Student mySelf = new Student();
+//mySelf.name = "Matthew Walloch";
+//mySelf.overallGradePercentage= 108.36;
 
 //Console.WriteLine("Name: " + mySelf.name + "\n" + "Overall Grade: " + mySelf.overallGradePercentage + "%");
 //Console.ReadLine();
+
+Student graduate = new Student("Gray Djuwit", 98);
+graduate.MakeStudentAGraduate();
+
+Console.WriteLine("Name: " + graduate.name + "\n" + "Overall Grade: " + graduate.overallGradePercentage + "%" + "\n" + 
+    "Graduated?: " + graduate.isGraduate);
+Console.ReadLine();
