@@ -27,8 +27,9 @@ This can be done in the project that you used for the previous task, or a brand 
 //Console.WriteLine("Name: " + mySelf.name + "\n" + "Overall Grade: " + mySelf.overallGradePercentage + "%");
 //Console.ReadLine();
 
-Student graduate = new Student("Gray Djuwit", 98);
-graduate.MakeStudentAGraduate();
+//Redundant
+//Student graduate = new Student("Gray Djuwit", 98);
+//graduate.MakeStudentAGraduate();
 
 //Console.WriteLine("Name: " + graduate.name + "\n" + "Overall Grade: " + graduate.overallGradePercentage + "%" + "\n" + 
 //    "Graduated?: " + graduate.isGraduate);
@@ -44,4 +45,15 @@ CSharpExercises calculator = new CSharpExercises();
 //Console.WriteLine(calculator.RunPayCalculator(25, 10.50));
 //Console.ReadLine();
 
-calculator.DoFizzbuzz();
+//calculator.DoFizzbuzz();
+
+
+Student billy = new Student("Billy Bob");
+billy.studentProjectGradePercentages.Add(100);
+billy.studentProjectGradePercentages.Add(90);
+billy.studentProjectGradePercentages.Add(95);
+billy.SetOverallGradePercentage();
+
+Console.WriteLine("Name: " + billy.name + "\n" + "Overall Grade: " + billy.overallGradePercentage + "%" + "\n" +
+    "Graduated?: " + billy.isGraduate);
+Console.ReadLine();

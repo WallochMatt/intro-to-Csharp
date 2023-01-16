@@ -14,18 +14,32 @@ namespace Intro
 
         public bool isGraduate;
 
+        public List<int> studentProjectGradePercentages;
 
 
-        public Student(string name, double overallGradePercentage)
+
+        public Student(string name)
         {
             this.name = name;
-            this.overallGradePercentage= overallGradePercentage;
             this.isGraduate = false;
+            this.studentProjectGradePercentages = new List<int>();
         }
 
         public void MakeStudentAGraduate()
         {
             isGraduate = true;
+        }
+
+        public void SetOverallGradePercentage()
+        {
+            int total;
+            total = 0;
+            foreach(int grade in studentProjectGradePercentages)
+            {
+                total += grade; 
+            }
+
+            overallGradePercentage = total / studentProjectGradePercentages.Count;
         }
     }
 }
