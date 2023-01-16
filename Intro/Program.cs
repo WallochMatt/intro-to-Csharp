@@ -22,9 +22,7 @@ Go ahead and create a class called 'Student'.
 This can be done in the project that you used for the previous task, or a brand new project if you want.
 */
 
-//Student mySelf = new Student();
-//mySelf.name = "Matthew Walloch";
-//mySelf.overallGradePercentage= 108.36;
+
 
 //Console.WriteLine("Name: " + mySelf.name + "\n" + "Overall Grade: " + mySelf.overallGradePercentage + "%");
 //Console.ReadLine();
@@ -32,6 +30,16 @@ This can be done in the project that you used for the previous task, or a brand 
 Student graduate = new Student("Gray Djuwit", 98);
 graduate.MakeStudentAGraduate();
 
-Console.WriteLine("Name: " + graduate.name + "\n" + "Overall Grade: " + graduate.overallGradePercentage + "%" + "\n" + 
-    "Graduated?: " + graduate.isGraduate);
+//Console.WriteLine("Name: " + graduate.name + "\n" + "Overall Grade: " + graduate.overallGradePercentage + "%" + "\n" + 
+//    "Graduated?: " + graduate.isGraduate);
+//Console.ReadLine();
+
+
+
+/*In your new class, create a public member method called 'RunPayCalculator'. Give this method two parameters so that the
+'hoursWorked' and 'payRate' can be passed into this method from the outside. This method is where you will write the logic
+for your pay calculator! Your method should end by returning the calculated 'totalPay'.
+*/
+CSharpExercises calculator = new CSharpExercises();
+Console.WriteLine(calculator.RunPayCalculator(25, 10.50));
 Console.ReadLine();
