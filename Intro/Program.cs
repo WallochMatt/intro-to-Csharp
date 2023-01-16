@@ -41,5 +41,7 @@ graduate.MakeStudentAGraduate();
 for your pay calculator! Your method should end by returning the calculated 'totalPay'.
 */
 CSharpExercises calculator = new CSharpExercises();
-Console.WriteLine(calculator.RunPayCalculator(25, 10.50));
-Console.ReadLine();
+//Console.WriteLine(calculator.RunPayCalculator(25, 10.50));
+//Console.ReadLine();
+
+calculator.DoFizzbuzz();
